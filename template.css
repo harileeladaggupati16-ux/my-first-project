@@ -1,0 +1,392 @@
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Lobster&family=Macondo&family=Roboto:ital,wght@0,100..900;1,100..900&family=Special+Elite&display=swap');
+
+/*
+Lato
+Roboto Mono
+Merriweather
+Noto Sans
+Science Gothic
+PT Sans
+Roboto
+Lobster
+*/
+
+/*Header Section Styles*/
+.title
+{
+    font-size: 35px;
+    font-family: Sciencs Gothic;
+    color: black;
+}
+
+.myMenu
+{
+    margin-left: 100px;
+    margin-right: auto;
+}
+
+.nav-item a
+{
+    font-family: PT Sans;
+    font-size: 18px;
+    margin-right: 15px;
+    padding: 5px;
+}
+
+.nav-item a:hover
+{
+    color: black;
+    border-bottom: 2px solid red;
+}
+
+.headerBtn
+{
+    border-radius: 50px;
+    padding: 15px;
+}
+
+/* Banner Section Styles */
+
+.btitle
+{
+  color: black;
+  font-size: 30px;
+  font-family: 'Merriweather';
+  margin-top: 120px;
+}
+
+.bannerBg
+{
+  background-color: #e0dddd;
+  margin-top: 100px;
+}
+
+.list1
+{
+  list-style-image: url("../images/tick.jpg");    
+
+}
+
+.list li
+{
+  margin: 15px 0px;
+}
+
+.bookDesign
+{
+  border: 3px solid #000000;
+  text-align: center;
+  padding: 15px 0px;
+}
+
+.about 
+{
+  background-color: #f8f9fa;  /* light grey */
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.bookTable
+{
+  border: 2px solid #000000;
+  text-align: center;
+  padding: 15px 0px;
+  margin: 20px auto;
+}
+
+.imgFade
+{
+  opacity: 0.5;
+}
+
+.iconCircle
+{
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #995e5e;
+  text-align: center;
+  line-height: 60px;
+  color: white;
+  font-size: 25px;
+  position: absolute;
+  top: 40px;
+  left: 70px;
+}
+
+
+.dessertsImg 
+{
+  width: 100%;
+  height: 200px;    /* adjust as per your design */
+  object-fit: cover;
+  border-radius: 50px;
+}
+
+.aboutFooter
+{
+  background-color: #c2c1c1;
+}
+
+.menuBottom
+{
+  font-family:'Franklin Gothic Medium';
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+.cake-card {
+    border-radius: 15px;
+    background: #fff;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.cake-card:hover {
+    transform: translateY(-8px);
+}
+
+.cake-img {
+    position: relative;
+}
+
+.cake-img img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+/* Wave effect bottom */
+.cake-img::after {
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    width: 100%;
+    height: 60px;
+    background: url('https://i.imgur.com/X7qfL7L.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.imgEvent
+{
+  margin-bottom: 300px;
+}
+
+.booking-section {
+    background: #f7f7f7;
+}
+
+.booking-img {
+    border-radius: 5px;
+    object-fit: cover;
+    width: 300px; 
+    height: 400px;
+    margin-bottom: 50px;
+}
+
+.booking-box {
+    background: #fff;
+    border-radius: 8px;
+    margin-top: 50px;
+}
+
+.booking-box input,
+.booking-box textarea {
+    font-size: 15px;
+    padding: 10px;
+}
+
+.btn-danger {
+    background: #c40000;
+    border: none;
+    font-weight: 600;
+}
+
+.btn-danger:hover {
+    background: #a00000;
+}
+
+.event-card 
+{
+    position: relative;
+    height: 420px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Dark overlay */
+.event-card::before 
+{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.45);
+}
+
+/* Text on image */
+.event-content 
+{
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    color: white;
+    z-index: 2;
+}
+
+.event-price 
+{
+    font-size: 26px;
+    font-weight: 700;
+}
+  
+
+
+
+.gallery-section {
+    background: #f1f0ef;
+}
+
+.gallery-title {
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 2px;
+}
+
+.gallery-img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 6px;
+    transition: .3s;
+    
+}
+
+.gallery-wrapper {
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 20px 0;
+    scroll-snap-type: x mandatory;
+}
+
+.gallery-scroll {
+    display: inline-flex;
+    gap: 25px;
+}
+
+.gallery-img {
+    width: 220px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 12px;
+    scroll-snap-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    opacity: 0.9;
+    border: 3px solid red;
+}
+
+/* Highlight middle image */
+.gallery-img:hover,
+.gallery-img:focus,
+.gallery-img:active {
+    transform: scale(1.12);
+    opacity: 1;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+/* Highlight center image */
+.center-img img {
+    border: 4px solid #301f1f;
+    border-radius: 8px;
+    transform: scale(1.1);
+}
+
+/* Carousel dots */
+.carousel-indicators button {
+    width: 12px !important;
+    height: 12px !important;
+    border-radius: 50%;
+    background-color: #999 !important;
+}
+
+.carousel-indicators .active {
+    background-color: #d43737 !important;
+}
+
+
+.contact-banner 
+{
+    height: 260px;
+    background: #ddd;  /* Replace with an image if needed */
+    border-radius: 8px;
+ }
+
+.info-box {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+}
+
+.info-icon 
+{
+    background: #e63946;
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    margin-right: 15px;
+}
+
+.social-icon {
+    width: 60px;
+    height: 60px;
+    border: 2px solid #999;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 26px;
+    color: #ccc;
+    transition: 0.3s;
+}
+
+.social-icon:hover 
+{
+    border-color: #fff;
+    color: #fff;
+    transform: scale(1.1);
+}
+
+        
+.footer 
+{
+    background: #111;
+    color: #ccc;
+    padding: 40px 0;
+    margin-top: 50px;
+}
+
+.footer a 
+{
+    color: #ccc;
+    text-decoration: none;
+}
+
+.footer a:hover 
+{
+    color: white;
+}
+   
